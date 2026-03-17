@@ -1,136 +1,129 @@
-# Visualisation with Excel: A Week-by-Week Learning Story
+# Visualisation with Excel: The Story Behind the Dashboards
 
-This repository is not just a collection of Excel files. It is a learning journey where each workbook solves a specific analytics and reporting problem using formulas, PivotTables, charts, and VBA macros.
+This repository captures a full learning journey in Excel, starting from core visualization practice and evolving into strategic decision dashboards, forecasting, and simulation-backed business planning.
 
-The core idea was simple: move from raw data to decision-ready dashboards, and automate repetitive work step by step.
+The project was built week by week, and each week added a new layer of maturity:
+- Visual design and interactivity
+- Multi-perspective business reporting
+- Strategy design with Goal Seek
+- Forecasting and risk simulation
+- Final integrated submission
 
-## What We Were Trying to Solve
+## Journey At A Glance
 
-The project focused on these practical problems:
+| Week | Focus | Main Output | Workbook(s) | Video |
+|---|---|---|---|---|
+| Week 0 | Incubator fundamentals | Basic and advanced interactive visuals | [Week0_macros.xltm](Week0_macros.xltm) | [ALPHAA AI Week 0 *INCUBATOR'S WEEK*](https://www.youtube.com/watch?v=NdkMjj-HNkg) |
+| Week 1 | US Superstore analysis | Three-perspective dashboard system | [Week1_Alphaa Superstore Nov 2020.xlsm](Week1_Alphaa%20Superstore%20Nov%202020.xlsm) | [ALPHAA AI Week 1 Task](https://www.youtube.com/watch?v=_K2nITu_mzM) |
+| Week 2 | Promotion strategy | 25% growth plan, two versions | [Week3_1.xlsm](Week3_1.xlsm) | [Week 2 Task](https://www.youtube.com/watch?v=sHyGQb6WYjg), [Week 2 Task Version 2](https://www.youtube.com/watch?v=DfgTDYTrdHA) |
+| Week 3 | Forecasting and simulation | Monte Carlo feasibility and bounded forecasts | [Week3_1.xlsm](Week3_1.xlsm) | [Week 3 (Forecast and Monte Carlo)](https://www.youtube.com/watch?v=MmsfBoKfytY) |
+| Week 5 | Final consolidation | Final end-to-end dashboard submission | [WEEK-5_Sharable.xlsm](WEEK-5_Sharable.xlsm), [Superstore-Retail-Sep-2020_2_new.xlsm](Superstore-Retail-Sep-2020_2_new.xlsm) | [WEEK 5 ( Final Week Submission )](https://www.youtube.com/watch?v=I9z2BnBeXmc) |
 
-1. How do we convert raw retail data into clean, structured analysis?
-2. How do we split one big dataset into meaningful business views (region/category/team)?
-3. How do we create dashboards that are easy to present to stakeholders?
-4. How do we reduce manual effort with macros and make reporting repeatable?
-5. How do we write business-facing observations (growth, decline, contribution) from dashboard outputs?
+## Week-Wise Story And What Was Built
 
-## Learning Journey (Week 1 to Week 4)
+### Week 0: Incubator's Week
 
-### Week 1: First End-to-End Dashboard Build
+What we did:
+- Built basic and advanced Excel visualizations to establish dashboard fundamentals.
+- Created an advanced view for top IPL batsmen (Chris Gayle, David Warner, Virat Kohli) across 2008 to 2016.
 
-Workbook: [Week1_Alphaa Superstore Nov 2020.xlsm](Week1_Alphaa%20Superstore%20Nov%202020.xlsm)
+Extra challenge we incorporated:
+- Implemented interactive player filtering so clicking a player updates the career stats view dynamically.
+- Tackled the challenge of making visual outputs feel real-time and responsive.
 
-Problem solved:
-- Build a complete pipeline from dataset to calculations to dashboard in one workbook.
+Why it mattered:
+- This week established interaction design habits used in later business dashboards.
 
-How it was solved:
-- `Alphaa-Superstore-Nov-2020` was used as the source dataset layer.
-- `CALCULATIONS` became the transformation and metric layer.
-- `DASHBOARD` became the final presentation layer.
+Links:
+- Workbook: [Week0_macros.xltm](Week0_macros.xltm)
+- Video: [ALPHAA AI Week 0 *INCUBATOR'S WEEK*](https://www.youtube.com/watch?v=NdkMjj-HNkg)
 
-Learning outcome:
-- Understood dashboard architecture: `Data -> Compute -> Visualize`.
+### Week 1: US Superstore Analysis
 
-### Week 2-3: Multi-View Regional Analysis and Drilldowns
+What we did:
+- Built a large-scale dashboard using about 10,000 Superstore records (2016 to 2019).
+- Structured the solution into three business views:
+- Store Owner view for KPI tracking (revenue, profit, trend, satisfaction).
+- Data Analyst view for relationship analysis (discount impact on sales/profit).
+- Fact-Based view for top-5 entities (categories, customers, states, products).
 
-Workbook: [Week3_1.xlsm](Week3_1.xlsm)
+Extra challenge we incorporated:
+- Added slicers to compare year and quarter performance quickly.
+- Included delivery status and customer satisfaction for a more complete business-health view.
 
-Problem solved:
-- Move from a single summary dashboard to region-specific analysis and focused product-level drilldowns.
+Why it mattered:
+- One dataset was transformed into role-based decision dashboards, not just one generic report.
 
-How it was solved:
-- Built separate regional computation sheets: `Central`, `East`, `West`, `South`.
-- Added targeted sheets for high-interest combinations like `Central_Phones`, `East_Chairs`, `West_Copiers`, `South_Phones`.
-- Consolidated outputs into `DashBoard` for a manager-level view.
+Links:
+- Workbook: [Week1_Alphaa Superstore Nov 2020.xlsm](Week1_Alphaa%20Superstore%20Nov%202020.xlsm)
+- Video: [ALPHAA AI Week 1 Task](https://www.youtube.com/watch?v=_K2nITu_mzM)
 
-Learning outcome:
-- Learned segmentation strategy and how to design dashboards that support both overview and deep-dive questions.
+### Week 2: Strategic Promotion and Goal Seek
 
-### Week 4: Business Storytelling and Performance Communication
+What we did:
+- Designed a regional promotion strategy to achieve 25% overall sales growth.
+- Created two variants: one insight-heavy and one optimized for creativity and automation.
 
-Reference brief: [Week_4_task.pdf](Week_4_task.pdf)
+Extra challenge we incorporated:
+- Used Goal Seek to quantify the quantity and pricing milestones required to hit the target.
+- Used average year-over-year growth to identify high-potential products (for example, Copiers in West with strong growth behavior).
+- Identified opportunity zones by spotting cities below regional average sales.
 
-Problem solved:
-- Convert numerical outputs into a stakeholder-ready narrative.
+Why it mattered:
+- The dashboard evolved from descriptive analytics to prescriptive planning.
 
-How it was solved:
-- Compared sales periods and quantified increase/decrease percentages.
-- Communicated contribution share (Team A, S, P) and growth rates in clear business language.
-- Framed insights as recommendations and investigation points.
+Links:
+- Workbook: [Week3_1.xlsm](Week3_1.xlsm)
+- Video: [ALPHAA AI Week 2 Task](https://www.youtube.com/watch?v=sHyGQb6WYjg)
+- Video: [Alphaa AI Week 2 Task Version 2](https://www.youtube.com/watch?v=DfgTDYTrdHA)
 
-Learning outcome:
-- Learned that dashboards are only half the job; executive communication and insight framing are equally important.
+### Week 3: Forecasting and Monte Carlo Simulation
 
-## Supporting Workbooks and Progression
+What we did:
+- Evaluated whether the Week 2 strategy was actually feasible.
+- Built a forecasting layer with statistical confidence framing.
 
-### Foundations Template
+Extra challenge we incorporated:
+- Ran 1,000 Monte Carlo simulations to estimate probability of achieving the 25% goal.
+- Moved beyond straight-line projection by including seasonal behavior, especially Q4 uplift.
+- Broke down annual target into monthly and quarterly checkpoints.
+- Added upper and lower prediction bounds for risk-aware planning.
 
-Workbook: [Week0_macros.xltm](Week0_macros.xltm)
+Why it mattered:
+- Strategy decisions became probability-aware rather than assumption-driven.
 
-Purpose:
-- Practice base macro patterns and visualization setups in `BASIC VISUALIZATION` and `ADVANCE VISUALIZATION` before applying them to project workbooks.
+Links:
+- Workbook: [Week3_1.xlsm](Week3_1.xlsm)
+- Video: [Alphaa AI Week 3 (Forecast and Monte Carlo)](https://www.youtube.com/watch?v=MmsfBoKfytY)
 
-### Sharable and Advanced Versions
+### Week 5: Final Submission
 
-Workbooks:
-- [WEEK-5_Sharable.xlsm](WEEK-5_Sharable.xlsm)
-- [Superstore-Retail-Sep-2020_2_new.xlsm](Superstore-Retail-Sep-2020_2_new.xlsm)
+What we did:
+- Finalized a complete dashboard system that integrated strategy, forecasting, and simulation outputs.
+- Converted all weekly learnings into one coherent, presentation-ready final outcome.
 
-Purpose:
-- Package prior learnings into cleaner, presentation-ready files with stronger dashboard coverage and structured compute sheets.
+Why it mattered:
+- This week demonstrated end-to-end business decision support with Excel.
 
-## Manual Inspection Summary (What Exists Inside the Files)
+Links:
+- Workbook: [WEEK-5_Sharable.xlsm](WEEK-5_Sharable.xlsm)
+- Workbook: [Superstore-Retail-Sep-2020_2_new.xlsm](Superstore-Retail-Sep-2020_2_new.xlsm)
+- Video: [WEEK 5 ( Final Week Submission )](https://www.youtube.com/watch?v=I9z2BnBeXmc)
 
-I manually inspected all Excel macro files in this repository by reading workbook internals (sheets, chart parts, PivotTable parts, and VBA project presence).
+## Complete Video Library
 
-### Confirmed VBA Presence
+- Full playlist: [Alphaa AI | Ft. Tirth Shah](https://youtube.com/playlist?list=PL7F3DSvqWsylA6fBnF-Ntt-UaZ8mOjPAs&si=u7_2PuSVxkUyUjUT)
+- [My Video Resume for Alphaa AI](https://www.youtube.com/watch?v=IYKHo338wvU)
+- [Marketing Challenge Dashboard (Excel) (Ft. Tirth Shah)](https://www.youtube.com/watch?v=j-yTgajlf1g)
+- [LinkedIn Profile Analysis](https://www.youtube.com/watch?v=HL4CGCYqVJ8)
+- [New year challenge dashboard](https://www.youtube.com/watch?v=Gp0G9RiAbW4)
 
-All workbook/template files contain `xl/vbaProject.bin`, meaning macro code exists in every one of them:
+## How To Review This Repository
 
-- [Week0_macros.xltm](Week0_macros.xltm)
-- [Week1_Alphaa Superstore Nov 2020.xlsm](Week1_Alphaa%20Superstore%20Nov%202020.xlsm)
-- [Week3_1.xlsm](Week3_1.xlsm)
-- [WEEK-5_Sharable.xlsm](WEEK-5_Sharable.xlsm)
-- [Superstore-Retail-Sep-2020_2_new.xlsm](Superstore-Retail-Sep-2020_2_new.xlsm)
-
-### Structural Complexity by Workbook
-
-| Workbook | Worksheets | Charts | PivotTables | Tables | VBA |
-|---|---:|---:|---:|---:|---:|
-| Week0_macros.xltm | 3 | 11 | 0 | 3 | Yes |
-| Week1_Alphaa Superstore Nov 2020.xlsm | 3 | 14 | 19 | 1 | Yes |
-| Week3_1.xlsm | 11 | 47 | 5 | 32 | Yes |
-| WEEK-5_Sharable.xlsm | 8 | 22 | 11 | 2 | Yes |
-| Superstore-Retail-Sep-2020_2_new.xlsm | 7 | 35 | 6 | 13 | Yes |
-
-Interpretation:
-- This confirms progression from foundational work to richer, multi-layer dashboard systems.
-- The high counts of chart and pivot components indicate substantial visual and analytical build effort, not basic spreadsheet usage.
-
-## Exact Outputs You Built Through This Learning Experience
-
-1. Reusable macro-enabled workbook patterns
-2. Region-wise analytical views and drilldown sheets
-3. Dashboard pages for summary and comparison reporting
-4. Period-over-period growth and distribution analysis
-5. Business narrative reporting (not just technical output)
-6. Sharable workbook versions suitable for presentation/demo
-
-## How to Open and Review
-
-1. Open any `.xlsm` or `.xltm` file in desktop Microsoft Excel.
-2. Enable macros only for trusted local files.
-3. Review sheets in this order: source data -> compute sheets -> dashboard.
-4. Use slicers/filters/buttons (where available) to reproduce analysis outputs.
-
-## Why This Repository Matters
-
-This project demonstrates practical spreadsheet engineering and business analytics maturity:
-
-- Strong fundamentals in Excel automation
-- Clear transition from analysis to communication
-- Progressive improvement over weekly milestones
-- Real-world approach to reporting workflows
+1. Open the workbook for the week you want to inspect.
+2. Explore data sheets first, then calculation sheets, then dashboard sheets.
+3. Use slicers and interactive controls to reproduce insights.
+4. Compare workbook behavior with the matching week video.
 
 ## Author
 
